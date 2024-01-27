@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+/* CORES PARA USAR: #000000 , #FFFFFF , #C11641, #67C9D0 , 22D4FD */ 
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #F6F6F6;
+
+}
+
+.cabecalho {
+    /* Ordem -> Top Right Bottom Left */
+    padding: 2% 0% 0% 20%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 2px #C11641;
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 6% 20%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.apresentacao__conteudo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.6rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    width: 119%;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    width: 90%;
+    text-align: left;
+    letter-spacing: 2px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.cor-destaque-vermelho {
+    color: #C11641;
+    font-weight: bold; 
+    text-shadow: 2px 2px 2px #C11641;
+}
+
+.cor-destaque-azul {
+    color: #67C9D0; 
+    font-weight: bold;   
+    text-shadow: 2px 2px 2px #67C9D0;
+}
+
+.imagem-gustavo {
+    width: 38%;
+    border-radius: 10px;
+    border: 3px solid #C11641;
+    box-shadow: 1.5px 1.5px #67C9D0;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.75rem;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.apresentacao__links__linkedin {
+    display: flex;   
+    justify-content: center;   
+    gap: 20px;      
+    background-color: #67C9D0;
+    color: black;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #C11641;
+    width: 45%;
+    text-align: center;    
+    border-radius: 12px;
+    padding: 10px 0px;
+}
+
+.apresentacao__links__linkedin:hover {
+    background-color: #94dadf; 
+    padding: 10px; 
+    border: 1px solid #C11641;  
+}
+
+.apresentacao__links__github {
+    display: flex;    
+    justify-content: center;
+    gap: 20px;
+    background-color: #C11641;
+    color: black;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #7dd8df;
+    width: 45%;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px 0px;
+}
+
+.apresentacao__links__github:hover {
+    background-color: #cc204b;
+    padding: 10px; 
+    border: 1px solid #67C9D0;
+    
+}
+
+.apresentacao__redes {
+    color: white;
+    font-size: 2.25rem;
+    text-shadow: 3px 3px 3px #C11641;
+}
+
+.icone-github {
+    width: 36px;
+    margin-right: 10px;
+}
+
+.rodape {
+    background: linear-gradient((0, 0, 0, 0.960), rgba(0, 0, 0, 0.960));
+    color: white;
+    padding-top: 37px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 2px #C11641;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 6%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+    
+    .apresentacao__conteudo__titulo {
+        font-size: 2.6rem;
+        font-family: 'Helvetica Neue', sans-serif;
+        width: 100%;
+    }
+
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .imagem-gustavo {
+        width: 50%;
+    }
+
+    .apresentacao__links__linkedin {
+        width: 55%;  
+    } 
+
+    .apresentacao__links__github {
+        width: 55%;
+    }
+
+}   
+
+@media (max-width: 433px) {
+    .cabecalho__menu {
+        gap: 30px; 
+    }
+
+    .cabecalho__menu__link {
+        font-size: 2.3rem;
+    }    
+}    
+
